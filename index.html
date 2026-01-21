@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matteo Serra | Consulente Comunicazione & Sviluppo</title>
-    <meta name="description" content="Consulente a Torino specializzato in Comunicazione Politica, Sviluppo Web e Automazioni aziendali.">
+    <title>Matteo Serra | Consulenza Comunicazione Strategica & Sistemi Digitali</title>
+    <meta name="description" content="Consulenza strategica a Torino. Script, storytelling, automazioni e sviluppo web per aggiornare la tua comunicazione al mondo digitale.">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Matteo Serra | Innovation Consultant">
-    <meta property="og:description" content="Siti web strategici e automazioni workflow. Uniamo comunicazione e tecnologia.">
+    <meta property="og:title" content="Matteo Serra | Consulenza Strategica">
+    <meta property="og:description" content="Evolvi la tua comunicazione. Consulenza su storytelling, sistemi digitali e automazioni workflow.">
     <meta property="og:type" content="website">
 
     <!-- Tailwind CSS -->
@@ -21,104 +21,145 @@
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .text-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .glow { box-shadow: 0 0 30px rgba(99, 102, 241, 0.2); }
-        .service-card:hover { transform: translateY(-10px); border-color: #6366f1; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .service-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .service-card:hover { transform: translateY(-10px); border-color: #6366f1; }
         .badge { background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.2); color: #818cf8; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .cta-glow:hover { box-shadow: 0 0 50px rgba(99, 102, 241, 0.4); }
     </style>
 </head>
 <body class="antialiased">
 
+    <!-- Navigazione -->
     <nav class="fixed w-full z-50 py-6 px-8 flex justify-between items-center glass">
         <div class="flex items-center gap-2">
             <div class="w-8 h-8 bg-indigo-600 rounded flex items-center justify-center font-extrabold text-sm text-white">MS</div>
             <span class="font-bold tracking-tight uppercase text-sm italic">Matteo Serra</span>
         </div>
         <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-gray-400">
-            <a href="#about" class="hover:text-white transition-colors">Chi Sono</a>
-            <a href="#web" class="hover:text-white transition-colors">Web Design</a>
-            <a href="#automation" class="hover:text-white transition-colors">Automazioni</a>
-            <a href="#contact" class="text-indigo-400">Contatti</a>
+            <a href="#vision" class="hover:text-white transition-colors">La Visione</a>
+            <a href="#consulenza" class="hover:text-white transition-colors">Consulenze</a>
+            <a href="#automation" class="hover:text-white transition-colors">Sistemi</a>
+            <a href="#contact" class="text-indigo-400 hover:text-indigo-300">Inizia Ora</a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="min-h-screen flex items-center justify-center pt-20 px-8 relative overflow-hidden">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] -z-10"></div>
         <div class="max-w-5xl mx-auto text-center">
             <div class="mb-6 inline-flex items-center gap-2">
                 <span class="badge">Torino, Italia</span>
-                <span class="badge">Laurea in Comunicazione Politica</span>
+                <span class="badge">Consulenza Strategica</span>
             </div>
             <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight">
-                Comunico <span class="text-gradient">Visioni</span>.<br>Sviluppo <span class="text-gradient">Sistemi</span>.
+                Aggiorna il tuo <span class="text-gradient">Sistema</span>.<br>Evolvi il tuo <span class="text-gradient">Messaggio</span>.
             </h1>
-            <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12">
-                Mi chiamo <strong>Matteo Serra</strong>. Unisco le strategie della comunicazione politica alla precisione dello sviluppo web per ottimizzare il business della tua azienda.
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12">
+                I vecchi modelli di comunicazione non funzionano più. Mi chiamo <strong>Matteo Serra</strong> e aiuto aziende e professionisti a migrare verso sistemi digitali avanzati attraverso consulenze su misura che uniscono storytelling e tecnologia.
             </p>
             <div class="flex flex-wrap justify-center gap-6">
-                <a href="#web" class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-full font-bold transition-all glow">I Miei Servizi</a>
-                <a href="#automation" class="glass px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-white">Vedi Automazioni</a>
+                <a href="#consulenza" class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-full font-bold transition-all glow">Scopri le Consulenze</a>
+                <a href="#contact" class="glass px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-white">Prenota un Audit</a>
             </div>
         </div>
     </section>
 
-    <section id="web" class="py-32 px-8 border-t border-white/5">
+    <!-- Sezione Consulenza Comunicazione -->
+    <section id="consulenza" class="py-32 px-8 border-t border-white/5">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div class="order-2 lg:order-1">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000" alt="Sviluppo Web Torino" class="rounded-3xl shadow-2xl border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1000" alt="Consulenza Strategica Digital" class="rounded-3xl shadow-2xl border border-white/10 opacity-80">
                 </div>
                 <div class="order-1 lg:order-2 space-y-8">
-                    <span class="text-indigo-500 font-bold uppercase tracking-widest text-sm">01. Web Development</span>
-                    <h2 class="text-4xl md:text-5xl font-bold">Siti Web che Parlano al Target.</h2>
+                    <span class="text-indigo-500 font-bold uppercase tracking-widest text-sm">01. Strategia di Comunicazione</span>
+                    <h2 class="text-4xl md:text-5xl font-bold">Oltre i vecchi schemi del passato.</h2>
                     <p class="text-gray-400 text-lg leading-relaxed">
-                        Grazie al mio background in <strong>Comunicazione Politica</strong>, non mi limito al codice. Analizzo il messaggio, studio il posizionamento e costruisco siti web che sono strumenti di persuasione e conversione.
+                        Molte realtà comunicano ancora con logiche del decennio scorso. La mia consulenza si focalizza sul posizionamento nel <strong>mondo digitale contemporaneo</strong>, trasformando la tua identità in un asset narrativo potente.
                     </p>
-                    <ul class="space-y-4 text-gray-300">
-                        <li class="flex items-center gap-4"><i class="fa-solid fa-check text-indigo-500"></i> Landing Page per campagne specifiche</li>
-                        <li class="flex items-center gap-4"><i class="fa-solid fa-check text-indigo-500"></i> Corporate Website per brand identity</li>
-                        <li class="flex items-center gap-4"><i class="fa-solid fa-check text-indigo-500"></i> E-commerce integrati e performanti</li>
-                    </ul>
+                    <div class="grid gap-6 mt-8">
+                        <div class="glass p-6 rounded-2xl border-l-4 border-indigo-500">
+                            <h4 class="font-bold text-white mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-pen-nib text-indigo-400"></i> Script & Storytelling
+                            </h4>
+                            <p class="text-sm text-gray-400">Scrittura strategica per video, presentazioni e brand awareness. Ogni parola deve avere un obiettivo.</p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl border-l-4 border-purple-500">
+                            <h4 class="font-bold text-white mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-chart-line text-purple-400"></i> Crescita Social
+                            </h4>
+                            <p class="text-sm text-gray-400">Consulenza per la creazione di una presenza organica e autorevole sulle piattaforme social moderne.</p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl border-l-4 border-pink-500">
+                            <h4 class="font-bold text-white mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-laptop-code text-pink-400"></i> Web Strategico
+                            </h4>
+                            <p class="text-sm text-gray-400">Sviluppo di hub digitali (siti e landing page) progettati per convertire, non solo per apparire.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="automation" class="py-32 px-8 bg-indigo-950/20">
+    <!-- Sezione Automazione -->
+    <section id="automation" class="py-32 px-8 bg-indigo-950/10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <span class="text-pink-500 font-bold uppercase tracking-widest text-sm">02. Automation & Workflow</span>
-                <h2 class="text-4xl md:text-5xl font-bold mt-4">Più Tempo per la Strategia.</h2>
-                <p class="text-gray-400 mt-6 max-w-2xl mx-auto">Semplifico il lavoro quotidiano implementando flussi automatici che eliminano il lavoro manuale ripetitivo.</p>
+                <span class="text-pink-500 font-bold uppercase tracking-widest text-sm">02. Sistemi & Automazioni</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4">Libera la tua mente dal ripetitivo.</h2>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto">La consulenza tecnica serve a costruire un'infrastruttura che lavora per te, permettendoti di concentrarti solo sulla strategia e sulla crescita.</p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass p-8 rounded-3xl border-l-4 border-pink-500 service-card">
-                    <h3 class="text-xl font-bold mb-4 flex items-center gap-3 text-white">
-                        <i class="fa-solid fa-envelope-open-text text-pink-500"></i>
-                        Smistamento Mail
+                <div class="glass p-10 rounded-3xl border-l-4 border-pink-500 service-card">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-3 text-white">
+                        <i class="fa-solid fa-gears text-pink-500"></i>
+                        Workflow Automation
                     </h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Analisi e smistamento automatico delle email verso fogli di calcolo o CRM.
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Collego i tuoi strumenti (Mail, CRM, Fogli di calcolo) per creare flussi di lavoro fluidi e senza errori umani.
                     </p>
+                    <span class="text-xs font-bold text-pink-400 tracking-widest uppercase">Efficienza Operativa</span>
                 </div>
-                <div class="glass p-8 rounded-3xl border-l-4 border-indigo-500 service-card">
-                    <h3 class="text-xl font-bold mb-4 flex items-center gap-3 text-white">
-                        <i class="fa-solid fa-user-plus text-indigo-500"></i>
-                        Gestione Lead
+                <div class="glass p-10 rounded-3xl border-l-4 border-indigo-500 service-card">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-3 text-white">
+                        <i class="fa-solid fa-bolt text-indigo-500"></i>
+                        Digital Ecosystem
                     </h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Sincronizzazione tra form contatti e notifiche istantanee via Telegram.
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Analizzo i tuoi attuali sistemi e propongo una migrazione verso strumenti cloud e AI-ready per non restare indietro.
                     </p>
+                    <span class="text-xs font-bold text-indigo-400 tracking-widest uppercase">Innovazione Strutturale</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-32 px-8 border-t border-white/10">
+    <!-- Footer / CTA Finale -->
+    <footer id="contact" class="py-32 px-8 border-t border-white/10 relative overflow-hidden">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-indigo-600/10 rounded-full blur-[120px] -z-10"></div>
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold mb-8 italic tracking-tighter text-white">Hai un progetto?</h2>
-            <div class="flex flex-col items-center gap-6">
-                <a href="mailto:serra.matte@gmail.com" class="text-2xl md:text-3xl font-bold hover:text-indigo-400 transition-all border-b-2 border-indigo-500 pb-2 text-white">serra.matte@gmail.com</a>
-                <p class="text-gray-500 uppercase tracking-widest text-xs mt-8">Matteo Serra — Torino — 2026</p>
+            <span class="badge mb-6">Pronto all'evoluzione?</span>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-10 tracking-tighter text-white">Smetti di usare vecchi sistemi. <span class="text-gradient">Inizia a competere.</span></h2>
+            
+            <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
+                Prenota una consulenza conoscitiva. Analizzeremo la tua attuale strategia di comunicazione e i tuoi processi aziendali per portarli nel futuro.
+            </p>
+
+            <div class="flex flex-col items-center gap-8">
+                <a href="mailto:serra.matte@gmail.com" class="bg-white text-black hover:bg-indigo-500 hover:text-white px-12 py-6 rounded-full text-2xl font-black transition-all cta-glow transform hover:scale-105">
+                    LAVORIAMO INSIEME
+                </a>
+                
+                <div class="flex flex-col items-center gap-2">
+                    <span class="text-gray-500 uppercase tracking-widest text-[10px]">Contatto Diretto</span>
+                    <a href="mailto:serra.matte@gmail.com" class="text-xl font-medium hover:text-indigo-400 transition-colors">serra.matte@gmail.com</a>
+                </div>
+
+                <div class="pt-20 opacity-30">
+                    <p class="text-[10px] uppercase tracking-[0.4em]">Matteo Serra — Consulenza & Strategia — Torino 2026</p>
+                </div>
             </div>
         </div>
     </footer>
